@@ -1,17 +1,21 @@
 # データ分析研修
 ## 日時
-- 第1回_2019/08/25_13:00~17:00
-- 第2回_2019/09/01_13:00~17:00
+- 第1回_2019/08/25(日)_13:00~17:00
+- 第2回_2019/09/01(日)_13:00~17:00
+- 第3回_2019/09/07(土)_13:00~17:00
 
 ## はじめに
 - 全般
   - 全部の資料を用意するのは大変なので、基本的にはQiitaの入門記事などを参照していきます
+- textの共有にはmimemoとGithubを使用します
 - Github
     - https://github.com/laplaciannin102/DataAnalysisTraining
+    - 右上の```clone or download```の```download zip```を押下してzipをダウンロード
 
 ## 自習課題
 - [Progate] できればPython研修の3まで
   - https://prog-8.com/
+  - 途中から有料らしいので無理しなくても良いです
 
 ## Python
 - Pythonについて全般
@@ -42,6 +46,7 @@
 
 - Jupyter Notebookについて
   - コマンドライン上で「jupyter notebook」を実行
+    - コマンドラインは「Windowキー+R」を押して「ファイル名を指定して実行」ウィンドウを出して、```cmd```と打ちOKすると良い
   - https://qiita.com/horankey_jet_city/items/f29c3477a5099f12cb18
   - こんなバッチファイルを用意しておくとDドライブ上で起動できたりして便利だったりする
     - start_jupyter.bat
@@ -50,6 +55,9 @@
     jupyter notebook
     ```
     - KernelタブのRestart & Clear Output でノート全体をプログラム実行前に戻せる
+    - Local Host(デフォルト)
+      - http://localhost:8888/
+      - chromeで開いてください。駄目だったら8889で。
 
 - Pandas基本操作
   - https://qiita.com/ysdyt/items/9ccca82fc5b504e7913a
@@ -78,9 +86,25 @@ import numpy as np
 import pandas as pd
 ```
 ```
-df = pd.DataFrame([[160,50,20],[170,60,26],[180,70,30]], columns=['身長', '体重', '年齢'])
-df
+df0 = pd.DataFrame([['太郎', 160, 50, 20], ['次郎', 170,60,26], ['三郎', 180, 70, 30], ['四郎', 190, 80, 10]], columns=['名前', '身長', '体重', '年齢'])
+df0
 ```
+```
+df1 = pd.DataFrame({'名前': ['太郎', '次郎', '三郎', '四郎'], '身長': [160, 170, 180, 190], '体重': [50, 60, 70, 80], '年齢': [20, 26, 30, 10]})
+df1
+```
+```
+df0['BMI'] = df0.apply(lambda row: row['体重'] / ((row['身長']/100)**2), axis=1)
+df0
+```
+```
+# 相関係数の絶対値が高い順に並べる
+corr0 = corr[[target]]
+corr0['abs_corr'] = corr0[target].abs()
+corr0 = corr0.sort_values(by='abs_corr', ascending=False)
+corr0
+```
+
 ```
 for ii in range(3):
     print('iiは ', ii)
