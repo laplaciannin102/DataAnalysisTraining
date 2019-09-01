@@ -6,8 +6,8 @@
 ## はじめに
 - 全般
   - 全部の資料を用意するのは大変なので、基本的にはQiitaの入門記事などを参照していきます
-- テキスト共有ページ(このページのことです。このURLにアクセスしてください。)
-    - https://mimemo.io/m/5dn7jlKVKjor9Ye
+- Github
+    - https://github.com/laplaciannin102/DataAnalysisTraining
 
 ## 自習課題
 - [Progate] できればPython研修の3まで
