@@ -69,6 +69,8 @@
   - https://data.gunosy.io/entry/2016/08/05/115345
 
 ## データ分析
+- ブレインパッド様の新卒研修資料
+  - https://speakerdeck.com/brainpadpr/basics-of-analysis-modeling
 - Pythonでタイタニック生存予測
   - https://www.randpy.tokyo/entry/python_random_forest
 
