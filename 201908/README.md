@@ -24,6 +24,9 @@
     - https://www.python-izm.com/introduction/
 
 - インストール
+  - エディタ
+    - Visual Studio Code
+      - https://azure.microsoft.com/ja-jp/products/visual-studio-code/
   - Pythonは3系(今だと3.7?)を使う
   - Anaconda
     - Anaconda はデータサイエンス向けのPythonパッケージなどを提供するプラットフォームです。科学技術計算などを中心とした、多くのモジュールやツールのコンパイル済みバイナリファイルを提供しており、簡単にPythonを利用する環境を構築できます。
