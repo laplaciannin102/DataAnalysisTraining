@@ -4,7 +4,7 @@
 
 """
 @author: kosuke.asada
-可視化用関数
+可視化用module
 """
 
 
@@ -13,16 +13,19 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import pydotplus as pdp
 import seaborn as sns
+from sklearn.externals.six import StringIO
+from IPython.display import Image
 
 import japanize_matplotlib
 
 # 設定のimport
 from .mod_config import *
-# 自作関数のimport
-from .analysis import *
+# 自作moduleのimport
 from .calculation import *
-from .scraping import *
 from .useful import *
+from .scraping import *
+# from .preprocessing import *
+# from .analysis import *
 
 
 def graph(x, y, title='graph', xlabel='x', ylabel='y'):

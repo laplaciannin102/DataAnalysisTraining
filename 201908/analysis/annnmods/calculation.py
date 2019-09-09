@@ -4,7 +4,7 @@
 
 """
 @author: kosuke.asada
-計算用関数
+数値計算用module
 """
 
 
@@ -13,11 +13,12 @@ import numpy as np
 
 # 設定のimport
 from .mod_config import *
-# 自作関数のimport
-from .analysis import *
-from .scraping import *
-from .useful import *
-from .visualization import *
+# 自作moduleのimport
+# from .useful import *
+# from .scraping import *
+# from .visualization import *
+# from .preprocessing import *
+# from .analysis import *
 
 
 def pro_round(num, ndigits=0):
