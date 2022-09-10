@@ -17,6 +17,10 @@
 
 ## Python
 - Pythonについて全般
+  - [東大]Pythonプログラミング入門
+      - もはやこれでいい
+      - [https://utokyo-ipp.github.io/](https://utokyo-ipp.github.io/)
+
   - Python-izm
     - 基礎編と入門編だけでも見ておくと良いと思います。
     - https://www.python-izm.com/introduction/
