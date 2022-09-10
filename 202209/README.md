@@ -29,14 +29,18 @@
   - エディタ
     - Visual Studio Code
       - https://azure.microsoft.com/ja-jp/products/visual-studio-code/
+
   - Pythonは3系(今だと3.7?)を使う
+
   - Anaconda
     - Anaconda はデータサイエンス向けのPythonパッケージなどを提供するプラットフォームです。科学技術計算などを中心とした、多くのモジュールやツールのコンパイル済みバイナリファイルを提供しており、簡単にPythonを利用する環境を構築できます。
     - https://www.anaconda.com/distribution/
-  - Graphviz
-    - Python にかぎらず、グラフ（決定木、ノードとエッジの集合、グラフ理論のグラフ）を記述するときに利用するツールパッケージ
-    - http://ruby.kyoto-wu.ac.jp/info-com/Softwares/Graphviz/
-      - path部分は「C:\Program Files\Anaconda\Library\bin\graphviz」とか？で良い
+
+  - ~~Graphviz~~
+    - ~~Python にかぎらず、グラフ（決定木、ノードとエッジの集合、グラフ理論のグラフ）を記述するときに利用するツールパッケー~~ジ
+    - ~~http://ruby.kyoto-wu.ac.jp/info-com/Softwares/Graphviz/~~
+      - ~~path部分は「C:\Program Files\Anaconda\Library\bin\graphviz」とか？で良い~~
+    - ~~現在は不要~~
 
   - その他ライブラリインストール
     - matplotlib日本語化
@@ -44,7 +48,8 @@
     pip install japanize-matplotlib
     ```
 
-    - 決定木可視化(hoge viz無しで)
+    - ~~決定木可視化(hoge viz無しで)~~
+      - ~~現在は不要~~
     ```
     pip install dtreeplt
     ```
