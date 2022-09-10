@@ -43,9 +43,15 @@
     - ~~現在は不要~~
 
   - その他ライブラリインストール
-    - matplotlib日本語化
+    - matplotlib日本語化する．
     ```
     pip install japanize-matplotlib
+    ```
+
+    - スクレイピング用
+      - ネット上の情報を自動取得する．
+    ```
+    pip install beautifulsoup4
     ```
 
     - ~~決定木可視化(hoge viz無しで)~~
@@ -53,6 +59,7 @@
     ```
     pip install dtreeplt
     ```
+
 
 - Jupyter Notebookについて
   - コマンドライン上で「jupyter notebook」を実行
